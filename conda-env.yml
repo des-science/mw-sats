@@ -1,0 +1,27 @@
+# Environment for y3-mw-sats
+# 
+# To create this file:
+# $ conda env export
+#
+# This file may be used to create an environment using:
+# $ conda env create -v -f <this file>
+name: mw-sats
+channels:
+#  - default
+  - conda-forge
+dependencies:
+  - python=3.7
+  - setuptools 
+  - numpy 
+  - scipy
+  - matplotlib
+  - astropy
+  - healpy 
+  - pandas
+  - nose
+  - scikit-learn=0.21.3
+  - ipython
+  - jupyter
+  - pyyaml
+  - fitsio
+  - xgboost
