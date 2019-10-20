@@ -14,7 +14,7 @@ To get started, clone this GitHub repository and change into the newly created d
 The easiest way to install the necessary packages and dependencies is with `conda`. We have provided a conda environment file, which should specify the necessary packages and versions. This environment is designed for use with Python 3.
 
 ```
-conda env create -v -f conda-env.yaml
+> conda env create -v -f conda-env.yaml
 ```
 
 Once the environment has been installed, you can activate it and start this notebook server on your local machine.
