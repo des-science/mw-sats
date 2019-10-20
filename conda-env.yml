@@ -1,4 +1,4 @@
-# Environment for y3-mw-sats
+# Conda environment for mw-sats
 # 
 # To create this file:
 # $ conda env export
@@ -7,19 +7,20 @@
 # $ conda env create -v -f <this file>
 name: mw-sats
 channels:
-#  - default
   - conda-forge
 dependencies:
   - python=3.7
   - numpy=1.17.2
-  - scipy=1.3.1
-  - matplotlib=3.1.1
-  - astropy=3.2.2
   - healpy=1.12.10
-  - pandas=0.25.1
-  - scikit-learn=0.21.3
   - ipython=7.8.0
   - jupyter=1.0.0
   - pyyaml=5.1.2
-  - fitsio=1.0.5
   - xgboost=0.90
+  - wget=1.20.1
+  # Additional packages that may be useful
+  #- scipy=1.3.1
+  #- matplotlib=3.1.1
+  #- astropy=3.2.2
+  #- pandas=0.25.1
+  #- scikit-learn=0.21.3
+  #- fitsio=1.0.5

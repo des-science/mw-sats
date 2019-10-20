@@ -1,11 +1,28 @@
 #!/usr/bin/env python
 """
-Download data files from GitHub
+Download data products from GitHub.
 """
-baseurl = 'https://github.com/des-science/mw-sats/releases/download/'
-version = 'v0.1'
-filnames = []
+import yaml
 
-for filename in filenames:
-    url = baseurl + '/' + version + '/' + filename
-    os.system('curl %s -O %s'%(url,filename))
+import argparse
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('config',nargs='?',default='config.yaml',
+                    help='configuration file')
+args = parser.parse_args()
+
+print("Downloading data for mw-sats...")
+
+config = yaml.safe_load(open(args.config,'r'))
+
+baseurl = config['download']['url']
+release = config['download']['release']
+filename = config['download']['filename']
+url = '%(url)s/releases/download/%(release)s/%(filename)s'%config['download']
+
+cmd = 'wget %s'%url
+print(cmd)
+#subprocess.check_call(cmd,shell=True)
+
+cmd = 'tar -xzf %s'%filename
+print(cmd)
+#subprocess.check_call(cmd,shell=True)
