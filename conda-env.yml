@@ -11,17 +11,15 @@ channels:
   - conda-forge
 dependencies:
   - python=3.7
-  - setuptools 
-  - numpy 
-  - scipy
-  - matplotlib
-  - astropy
-  - healpy 
-  - pandas
-  - nose
+  - numpy=1.17.2
+  - scipy=1.3.1
+  - matplotlib=3.1.1
+  - astropy=3.2.2
+  - healpy=1.12.10
+  - pandas=0.25.1
   - scikit-learn=0.21.3
-  - ipython
-  - jupyter
-  - pyyaml
-  - fitsio
-  - xgboost
+  - ipython=7.8.0
+  - jupyter=1.0.0
+  - pyyaml=5.1.2
+  - fitsio=1.0.5
+  - xgboost=0.90
