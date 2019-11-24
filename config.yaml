@@ -6,18 +6,21 @@ download:
 datadir : './data'
 des:
   model   : 'classifier_stellar_des_v12.2.0.model'
-  mask    : 'healpix_mask_des_v4.1.fits.gz'
+  mask    : 'healpix_mask_des_v6.0.fits.gz'
   density : 'des_stellar_density_r22_equ_n128_v0.fits'
 ps1: 
   model   : 'classifier_stellar_ps1_v13.0.1.model'
-  mask    : 'healpix_mask_ps1_v4.1.fits.gz'
+  mask    : 'healpix_mask_ps1_v6.0.fits.gz'
   density : 'ps1_stellar_density_r22_equ_n128_v0.fits'
+
 maskbits : 
-    GOOD :  0b0000000 # No flags 
-    EBV  :  0b0000001 # E(B-V) > 0.2
-    ASSOC:  0b0000010 # near object in catalogs (excluding known dwarfs)
-    DWARF:  0b0000100 # near known dwarf 
-    STAR :  0b0001000 # near bright star
-    FOOT :  0b0010000 # outside of footprint             
-    FAIL :  0b0100000 # location of failure in ugali PS1 processing
-    ART  :  0b1000000 # location of artifact in PS1 footprint
+    GOOD   : 0b000000000 # No flags
+    DWARF4 : 0b000000001 # near known dwarf (type2 >= 4)
+    DWARF3 : 0b000000010 # near known dwarf (type2 == 3)
+    DWARF2 : 0b000000100 # near known dwarf (type2 == 2)
+    ASSOC  : 0b000001000 # near object in catalogs (excluding DWARFs)
+    STAR   : 0b000010000 # near bright star
+    EBV    : 0b000100000 # E(B-V) > 0.2
+    FOOT   : 0b001000000 # outside of footprint
+    FAIL   : 0b010000000 # location of failure in ugali PS1 processing
+    ART    : 0b100000000 # location of artifact in PS1 footprint
