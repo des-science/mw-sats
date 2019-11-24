@@ -1,6 +1,6 @@
 # Milky Way Satellite Luminosity Function
 
-Products associated to studies of the Milky Way satellite galaxy luminosity function. We provide some simple examples in a Jupyter notebook: [ExampleNotebook.ipynb](ExampleNotebook.ipynb). You can view the contents of this notebook on your web browser, or install and run on your local machine following the instructions below.
+This repository contains products associated with the observational selection function derived in the context of the Milky Way Satellite Census (Drlica-Wagner, Bechtol et al. 2019; Nadler et al. 2019). We provide some simple examples in a Jupyter notebook: [ExampleNotebook.ipynb](ExampleNotebook.ipynb). You can view the contents of this notebook on your web browser, or install and run on your local machine following the instructions below.
 
 ## Installation
 
@@ -24,3 +24,4 @@ Once the environment has been installed, you can activate it and start this note
 > jupyter notebook ExampleNotebook.ipynb
 ```
 
+Running the notebook will download the observational selection function model and associated data products from the [Releases](../releases) page of this repository.
