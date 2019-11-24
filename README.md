@@ -24,4 +24,4 @@ Once the environment has been installed, you can activate it and start this note
 > jupyter notebook ExampleNotebook.ipynb
 ```
 
-Running the notebook will download the observational selection function model and associated data products from the [Releases](../../releases) page of this repository.
+Running the notebook will download the observational selection function model and associated data products. You can also access those products directly from the [Releases](../../releases) page of this repository.
