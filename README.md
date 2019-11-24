@@ -6,7 +6,7 @@ This repository contains products associated with the observational selection fu
 
 The selection function model and associated data products can be accessed from the [Releases](../../releases) page of this repository (under the "Assets" of a release). The most recent version of these data products can be found here:
 
-* [mw-sats-data.tar.gz (6.4MB)](https://github.com/des-science/mw-sats/releases/download/v0.1/mw-sats-data.tar.gz)
+* [mw-sats-data.tar.gz (6.4MB)](https://github.com/des-science/mw-sats/releases/download/v0.2/mw-sats-data.tar.gz)
 
 ## Installation
 
