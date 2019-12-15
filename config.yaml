@@ -1,6 +1,6 @@
 download:
   url:      https://github.com/des-science/mw-sats
-  release:  v0.2
+  release:  v1.0
   filename: mw-sats-data.tar.gz
 
 datadir : './data'
